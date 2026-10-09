@@ -1,0 +1,174 @@
+/*
+ * Tailwind v4 mapping for Nexora design tokens.
+ * Token values are set at runtime by themeToCss(); this file only names them for Tailwind.
+ * Tailwind's default palette, radii, fonts and shadows are removed so components can only
+ * use semantic tokens (docs/09-design-system.md: no raw colors, fonts or radii in components).
+ */
+
+@theme {
+  --color-*: initial;
+  --radius-*: initial;
+  --font-*: initial;
+  --shadow-*: initial;
+
+  /* Fallbacks only; the resolved theme overrides every one of these. */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-card: 1rem;
+  --radius-control: 0.5rem;
+  --radius-pill: 9999px;
+  --font-heading: ui-sans-serif, system-ui, sans-serif;
+  --font-body: ui-sans-serif, system-ui, sans-serif;
+  --font-numeric: ui-sans-serif, system-ui, sans-serif;
+  --shadow-card: none;
+  --shadow-pop: none;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* Colors are inlined so utilities read the nearest themed element's variables. */
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-ink: var(--primary-ink);
+  --color-primary-tint: var(--primary-tint);
+  --color-on-primary: var(--on-primary);
+  --color-on-primary-tint: var(--on-primary-tint);
+  --color-focus: var(--focus-ring);
+  --color-overlay: var(--overlay);
+  --color-success: var(--success);
+  --color-success-bg: var(--success-bg);
+  --color-success-ink: var(--success-ink);
+  --color-warning: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-warning-ink: var(--warning-ink);
+  --color-danger: var(--danger);
+  --color-danger-bg: var(--danger-bg);
+  --color-danger-ink: var(--danger-ink);
+  --color-info: var(--info);
+  --color-info-bg: var(--info-bg);
+  --color-info-ink: var(--info-ink);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-chart-6: var(--chart-6);
+  --color-chart-good: var(--chart-good);
+  --color-chart-bad: var(--chart-bad);
+  --color-on-danger: var(--on-danger);
+
+  /* shadcn/ui names, so components added with the shadcn CLI follow the theme. */
+  --color-background: var(--canvas);
+  --color-foreground: var(--ink);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--ink);
+  --color-popover: var(--surface);
+  --color-popover-foreground: var(--ink);
+  --color-primary-foreground: var(--on-primary);
+  --color-secondary: var(--surface-2);
+  --color-secondary-foreground: var(--ink);
+  --color-muted: var(--surface-2);
+  --color-muted-foreground: var(--ink-muted);
+  --color-accent: var(--primary-tint);
+  --color-accent-foreground: var(--on-primary-tint);
+  --color-destructive: var(--danger);
+  --color-destructive-foreground: var(--on-danger);
+  --color-input: var(--border-strong);
+  --color-ring: var(--focus-ring);
+}
+
+@utility theme-root {
+  background: var(--backdrop);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: var(--weight-body);
+}
+
+@utility type-heading {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-heading);
+  text-transform: var(--heading-transform);
+  letter-spacing: var(--heading-tracking);
+}
+
+@utility type-body {
+  font-family: var(--font-body);
+  font-weight: var(--weight-body);
+}
+
+@utility type-numeric {
+  font-family: var(--font-numeric);
+  font-weight: var(--weight-numeric);
+  font-variant-numeric: tabular-nums;
+}
+
+/* A card in the style's own recipe: glass, flat, outlined or shadowed. */
+@utility surface-card {
+  background: var(--card-bg);
+  backdrop-filter: var(--blur-glass);
+  border: var(--border-width) solid var(--card-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+/* "Work mode" surface for dense screens (tables, forms): always solid. */
+@utility surface-solid {
+  background: var(--surface);
+  border: var(--border-width) solid var(--card-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+/* Form control outline: always visible (3:1) even in borderless styles; thicker in outlined styles. */
+@utility border-control {
+  border: max(1px, var(--border-width)) solid var(--border-strong);
+}
+
+@utility focus-ring {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+@utility motion-colors {
+  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease-standard);
+}
+
+@utility h-control {
+  height: var(--control-height);
+}
+
+@utility min-h-control {
+  min-height: var(--control-height);
+}
+
+@utility h-row {
+  height: var(--row-height);
+}
+
+@utility p-card {
+  padding: var(--space-card);
+}
+
+@utility gap-theme {
+  gap: var(--space-gap);
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
+}
