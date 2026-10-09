@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "@nexora/design-tokens/tailwind.css";
+
+/* Template blocks live outside this app; let Tailwind see their class names. */
+@source "../../../templates/blocks/src";
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    min-height: 100dvh;
+  }
+}
