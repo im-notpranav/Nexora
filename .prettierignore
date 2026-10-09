@@ -1,0 +1,13 @@
+pnpm-lock.yaml
+node_modules
+.next
+.turbo
+dist
+coverage
+playwright-report
+test-results
+**/__screenshots__/**
+**/*.md
+.claude
+# Guarded by the local config-protection hook; format it by hand, then remove this line.
+/eslint.config.mjs
