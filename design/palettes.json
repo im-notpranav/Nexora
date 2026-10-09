@@ -1,0 +1,203 @@
+{
+  "$comment": "Starter palettes. Color slots only; canvas, muted ink, border and the opposite mode are derived in OKLCH by packages/design-tokens and contrast-checked to WCAG AA.",
+  "version": 1,
+  "status": {
+    "light": {
+      "success": "#15803D",
+      "warning": "#B45309",
+      "danger": "#B91C1C",
+      "info": "#1D4ED8"
+    },
+    "dark": {
+      "success": "#4ADE80",
+      "warning": "#FBBF24",
+      "danger": "#F87171",
+      "info": "#60A5FA"
+    }
+  },
+  "palettes": [
+    {
+      "id": "sky",
+      "name": "Sky",
+      "baseMode": "light",
+      "mood": "Calm, modern SaaS",
+      "slots": {
+        "primary": "#1A68CF",
+        "primaryTint": "#9DCFEE",
+        "surface": "#F9F9FB",
+        "ink": "#0B1220",
+        "onPrimary": "#FFFFFF"
+      }
+    },
+    {
+      "id": "cobalt",
+      "name": "Cobalt",
+      "baseMode": "light",
+      "mood": "Confident, corporate",
+      "slots": {
+        "primary": "#1F4FE0",
+        "primaryTint": "#AFD4F9",
+        "surface": "#F3F6FA",
+        "ink": "#161A2E",
+        "onPrimary": "#FFFFFF"
+      }
+    },
+    {
+      "id": "ocean-indigo",
+      "name": "Ocean indigo",
+      "baseMode": "light",
+      "mood": "Trustworthy, tech",
+      "slots": {
+        "primary": "#3B4CCA",
+        "primaryTint": "#6FB4EF",
+        "surface": "#EEF1FB",
+        "ink": "#0E1435",
+        "onPrimary": "#FFFFFF"
+      }
+    },
+    {
+      "id": "lavender",
+      "name": "Lavender",
+      "baseMode": "light",
+      "mood": "Soft, finance and HR",
+      "slots": {
+        "primary": "#5F54B5",
+        "primaryTint": "#CDBEE8",
+        "surface": "#F6F3FA",
+        "ink": "#2A2540",
+        "onPrimary": "#FFFFFF"
+      }
+    },
+    {
+      "id": "teal-mint",
+      "name": "Teal mint",
+      "baseMode": "light",
+      "mood": "Fresh, health and ops",
+      "slots": {
+        "primary": "#0F7F75",
+        "primaryTint": "#99E2D3",
+        "surface": "#F3FAF8",
+        "ink": "#0D2A27",
+        "onPrimary": "#FFFFFF"
+      }
+    },
+    {
+      "id": "forest-sage",
+      "name": "Forest sage",
+      "baseMode": "light",
+      "mood": "Natural, wellness",
+      "slots": {
+        "primary": "#3F7A5C",
+        "primaryTint": "#B9CDB0",
+        "surface": "#F5F3EC",
+        "ink": "#1E2A22",
+        "onPrimary": "#FFFFFF"
+      }
+    },
+    {
+      "id": "ember",
+      "name": "Ember",
+      "baseMode": "light",
+      "mood": "Warm, human",
+      "slots": {
+        "primary": "#C2551A",
+        "primaryTint": "#F2B36B",
+        "surface": "#FAF7F3",
+        "ink": "#221A16",
+        "onPrimary": "#FFFFFF"
+      }
+    },
+    {
+      "id": "desert-clay",
+      "name": "Desert clay",
+      "baseMode": "light",
+      "mood": "Earthy, crafts and food",
+      "slots": {
+        "primary": "#9E5527",
+        "primaryTint": "#E8C9A5",
+        "surface": "#F8F1E7",
+        "ink": "#2B1F1B",
+        "onPrimary": "#FFFFFF"
+      }
+    },
+    {
+      "id": "blush-wine",
+      "name": "Blush wine",
+      "baseMode": "light",
+      "mood": "Premium, beauty",
+      "slots": {
+        "primary": "#B04A5C",
+        "primaryTint": "#F3DEE3",
+        "surface": "#FFF8F9",
+        "ink": "#3A0E17",
+        "onPrimary": "#FFFFFF"
+      }
+    },
+    {
+      "id": "crimson-ink",
+      "name": "Crimson ink",
+      "baseMode": "light",
+      "mood": "Bold, media",
+      "slots": {
+        "primary": "#C8102E",
+        "primaryTint": "#F2C6CC",
+        "surface": "#FFFFFF",
+        "ink": "#141414",
+        "onPrimary": "#FFFFFF"
+      }
+    },
+    {
+      "id": "graphite",
+      "name": "Graphite",
+      "baseMode": "light",
+      "mood": "Neutral, sleek",
+      "slots": {
+        "primary": "#1A1A1A",
+        "primaryTint": "#739FCF",
+        "surface": "#E9EBEE",
+        "ink": "#111317",
+        "onPrimary": "#FFFFFF"
+      }
+    },
+    {
+      "id": "sunflower-pop",
+      "name": "Sunflower pop",
+      "baseMode": "light",
+      "mood": "Playful, loud",
+      "slots": {
+        "primary": "#FFD43B",
+        "primaryTint": "#FF6FA8",
+        "surface": "#FFF6E9",
+        "ink": "#111111",
+        "onPrimary": "#111111"
+      },
+      "usage": "Primary only as a fill with a black outline or dark text; never as text on its surface."
+    },
+    {
+      "id": "lime-night",
+      "name": "Lime night",
+      "baseMode": "dark",
+      "mood": "Dark, energetic",
+      "slots": {
+        "primary": "#C6F432",
+        "primaryTint": "#8A93A6",
+        "surface": "#0E0F12",
+        "ink": "#F2F4F7",
+        "onPrimary": "#111111"
+      }
+    },
+    {
+      "id": "plum-dark",
+      "name": "Plum dark",
+      "baseMode": "dark",
+      "mood": "Dark, techy",
+      "slots": {
+        "primary": "#B28CFF",
+        "primaryTint": "#5A4A8C",
+        "surface": "#14121C",
+        "ink": "#EDE9F6",
+        "onPrimary": "#111111"
+      }
+    }
+  ]
+}

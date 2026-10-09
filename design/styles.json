@@ -1,0 +1,736 @@
+{
+  "$comment": "18 styles. Styles never contain brand colors; they reference a default palette id from palettes.json. radius values in px; 999 = full pill. recipes.kpi is the machine-readable KPI card variant (standard | comparison | progress | outlined | strip | terminal); type.weights is optional (defaults heading 700, body 400, numeric 600).",
+  "version": 1,
+  "acceptance": [
+    "login",
+    "dashboard-kpi",
+    "data-table",
+    "form",
+    "detail",
+    "settings",
+    "empty-state"
+  ],
+  "styles": [
+    {
+      "id": "airy-pill",
+      "name": "Airy pill",
+      "group": "dashboard",
+      "bestFor": ["SaaS metrics", "startup admin"],
+      "reference": "https://dribbble.com/shots/27663724-SaaS-Analytics-Platform-Dashboard",
+      "defaults": {
+        "palette": "sky",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "Manrope",
+        "body": "Manrope",
+        "numeric": "Manrope",
+        "weights": {
+          "numeric": 300
+        }
+      },
+      "shape": {
+        "radiusCard": 20,
+        "radiusControl": 999,
+        "pillControls": true,
+        "borderWidth": 0
+      },
+      "depth": {
+        "shadow": "faint",
+        "glass": false
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "icon-rail-left",
+        "topBar": "period-tabs",
+        "rightColumn": "live-list"
+      },
+      "recipes": {
+        "kpi": "standard",
+        "kpiCard": "Label on top, big light number, small rounded delta pill, mini chart inside",
+        "charts": "Fully rounded bars and soft lines in one hue family; gentle gradient in bars"
+      }
+    },
+    {
+      "id": "pastel-frost",
+      "name": "Pastel frost",
+      "group": "dashboard",
+      "bestFor": ["finance", "personal money", "HR"],
+      "reference": "https://dribbble.com/shots/26150398-Finance-Dashboard-design",
+      "defaults": {
+        "palette": "lavender",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "DM Sans",
+        "body": "DM Sans",
+        "numeric": "DM Sans"
+      },
+      "shape": {
+        "radiusCard": 24,
+        "radiusControl": 14,
+        "pillControls": false,
+        "borderWidth": 0
+      },
+      "depth": {
+        "shadow": "soft",
+        "glass": {
+          "opacity": 0.7,
+          "blurPx": 16,
+          "backdrop": "soft-color-wash"
+        }
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "sidebar"
+      },
+      "recipes": {
+        "kpi": "standard",
+        "kpiCard": "Tinted icon tile, number with lighter decimals, colored delta chip; cards in a horizontal strip",
+        "charts": "Pale bars with one highlighted bar in primary; segmented ring gauges"
+      }
+    },
+    {
+      "id": "industrial-dark",
+      "name": "Industrial dark",
+      "group": "dashboard",
+      "bestFor": ["inventory", "logistics", "operations"],
+      "reference": "https://dribbble.com/shots/27195047-Inventory-Management-Dashboard",
+      "defaults": {
+        "palette": "lime-night",
+        "mode": "dark",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "Space Grotesk",
+        "body": "Inter",
+        "numeric": "Space Grotesk"
+      },
+      "shape": {
+        "radiusCard": 16,
+        "radiusControl": 12,
+        "pillControls": true,
+        "borderWidth": 1
+      },
+      "depth": {
+        "shadow": "none",
+        "glass": false
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "sidebar"
+      },
+      "recipes": {
+        "kpi": "progress",
+        "kpiCard": "Number with a progress bar of thin ticks lit in the accent",
+        "charts": "Tick-bar and stripe charts; donuts with one bright segment; one neon accent only"
+      },
+      "imagery": "Optional photo banner across the top with metric chips over it (user image or generated)"
+    },
+    {
+      "id": "executive-cobalt",
+      "name": "Executive cobalt",
+      "group": "dashboard",
+      "bestFor": ["leadership reports", "sales"],
+      "reference": "https://dribbble.com/shots/27724102-Executive-Business-Dashboard",
+      "defaults": {
+        "palette": "cobalt",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "Inter",
+        "body": "Inter",
+        "numeric": "Inter"
+      },
+      "shape": {
+        "radiusCard": 14,
+        "radiusControl": 10,
+        "pillControls": true,
+        "borderWidth": 1
+      },
+      "depth": {
+        "shadow": "none",
+        "glass": false
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "top-icon-tabs"
+      },
+      "recipes": {
+        "kpi": "strip",
+        "kpiCard": "All KPIs in one strip across the top: value, change and a tiny count tag",
+        "charts": "One hue in several tints; hatched fills for comparison periods; standout period called out"
+      }
+    },
+    {
+      "id": "soft-graphite",
+      "name": "Soft graphite",
+      "group": "dashboard",
+      "bestFor": ["sales", "CRM", "e-commerce admin"],
+      "reference": "https://dribbble.com/shots/27671116-Sales-Analytics-Revenue-Management-Dashboard",
+      "defaults": {
+        "palette": "graphite",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "Outfit",
+        "body": "Outfit",
+        "numeric": "Outfit"
+      },
+      "shape": {
+        "radiusCard": 22,
+        "radiusControl": 999,
+        "pillControls": true,
+        "borderWidth": 0
+      },
+      "depth": {
+        "shadow": "none",
+        "glass": false
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "floating-pill-top",
+        "secondaryNav": "floating-icon-rail-left"
+      },
+      "recipes": {
+        "kpi": "standard",
+        "kpiCard": "Icon in a small circle top right; black round arrow button opens details",
+        "charts": "Area charts with two soft color bands; gray bars with light gradients"
+      }
+    },
+    {
+      "id": "warm-human",
+      "name": "Warm human",
+      "group": "dashboard",
+      "bestFor": ["communities", "utilities", "nonprofits"],
+      "reference": "https://dribbble.com/shots/27743047-Dashboard-Energy-Community-SaaS",
+      "defaults": {
+        "palette": "ember",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "Instrument Sans",
+        "body": "Instrument Sans",
+        "numeric": "Instrument Sans"
+      },
+      "shape": {
+        "radiusCard": 18,
+        "radiusControl": 12,
+        "pillControls": false,
+        "borderWidth": 1
+      },
+      "depth": {
+        "shadow": "faint",
+        "glass": false
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "sidebar-task-groups"
+      },
+      "recipes": {
+        "kpi": "comparison",
+        "kpiCard": "Number with unit in smaller type; plain-language trend line under it; one gradient insight card per page",
+        "charts": "Smooth lines with the best point marked by a tag; warm accent"
+      }
+    },
+    {
+      "id": "bento-grid",
+      "name": "Bento grid",
+      "group": "dashboard",
+      "bestFor": ["product overviews", "analytics home"],
+      "reference": "2026 trends",
+      "defaults": {
+        "palette": "ocean-indigo",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "Plus Jakarta Sans",
+        "body": "Plus Jakarta Sans",
+        "numeric": "Plus Jakarta Sans"
+      },
+      "shape": {
+        "radiusCard": 20,
+        "radiusControl": 12,
+        "pillControls": false,
+        "borderWidth": 0
+      },
+      "depth": {
+        "shadow": "faint",
+        "glass": false
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "top"
+      },
+      "recipes": {
+        "kpi": "standard",
+        "kpiCard": "Each KPI is a tile; hero metric gets a 2x2 tile with its chart",
+        "charts": "One chart per tile, minimal axes"
+      },
+      "grid": {
+        "columns": 12,
+        "gapPx": 12,
+        "tileSizes": ["1x1", "2x1", "2x2"]
+      }
+    },
+    {
+      "id": "data-dense-pro",
+      "name": "Data-dense pro",
+      "group": "dashboard",
+      "bestFor": ["ops teams", "finance back office", "admins"],
+      "reference": "2026 trends",
+      "defaults": {
+        "palette": "teal-mint",
+        "mode": "light",
+        "motionLevel": "off"
+      },
+      "type": {
+        "heading": "Inter",
+        "body": "Inter",
+        "numeric": "JetBrains Mono"
+      },
+      "shape": {
+        "radiusCard": 6,
+        "radiusControl": 6,
+        "pillControls": false,
+        "borderWidth": 1
+      },
+      "depth": {
+        "shadow": "none",
+        "glass": false
+      },
+      "density": "compact",
+      "layout": {
+        "nav": "collapsible-sidebar"
+      },
+      "recipes": {
+        "kpi": "standard",
+        "kpiCard": "Compact cards, four to six per row, with sparkline",
+        "charts": "Small multiples and sparklines over big hero charts"
+      },
+      "rowHeightPx": 32,
+      "features": ["sticky-table-headers", "filter-bar", "keyboard-shortcuts", "command-menu"]
+    },
+    {
+      "id": "corporate-classic",
+      "name": "Corporate classic",
+      "group": "dashboard",
+      "bestFor": ["colleges", "government", "enterprise CRM"],
+      "reference": "Enterprise practice",
+      "defaults": {
+        "palette": "cobalt",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "IBM Plex Sans",
+        "body": "IBM Plex Sans",
+        "numeric": "IBM Plex Sans"
+      },
+      "shape": {
+        "radiusCard": 8,
+        "radiusControl": 6,
+        "pillControls": false,
+        "borderWidth": 1
+      },
+      "depth": {
+        "shadow": "none",
+        "glass": false
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "sidebar-with-sections"
+      },
+      "recipes": {
+        "kpi": "comparison",
+        "kpiCard": "Label, number, comparison text such as 'vs last month'; no decoration",
+        "charts": "Plain bars and lines, labelled axes, gridlines on"
+      },
+      "features": ["breadcrumbs", "page-title-actions-right"]
+    },
+    {
+      "id": "light-glass",
+      "name": "Light glass",
+      "group": "expressive",
+      "bestFor": ["task tools", "team workspaces"],
+      "reference": "https://dribbble.com/shots/25346001-Glassmorphism-Dashboard-UI-Design",
+      "defaults": {
+        "palette": "ember",
+        "mode": "light",
+        "motionLevel": "expressive"
+      },
+      "type": {
+        "heading": "Plus Jakarta Sans",
+        "body": "Plus Jakarta Sans",
+        "numeric": "Plus Jakarta Sans"
+      },
+      "shape": {
+        "radiusCard": 20,
+        "radiusControl": 12,
+        "pillControls": false,
+        "borderWidth": 0
+      },
+      "depth": {
+        "shadow": "soft",
+        "glass": {
+          "opacity": 0.6,
+          "blurPx": 20,
+          "backdrop": "brand-image-or-generated-abstract",
+          "textLayerOpacity": 0.85
+        }
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "three-column"
+      },
+      "recipes": {
+        "kpi": "standard",
+        "kpiCard": "Greeting card first, then metric cards with small trend lines",
+        "charts": "Small trend lines; soft bars"
+      },
+      "imagery": "User's brand image or generated abstract shape in palette colors",
+      "workMode": "Solid surfaces for tables and forms"
+    },
+    {
+      "id": "neo-brutalist",
+      "name": "Neo-brutalist",
+      "group": "expressive",
+      "bestFor": ["creators", "education", "portfolios"],
+      "reference": "https://dribbble.com/shots/21066046-Personal-Website-Redesign-for-a-Product-Designer-NeoBrutalism",
+      "defaults": {
+        "palette": "sunflower-pop",
+        "mode": "light",
+        "motionLevel": "expressive"
+      },
+      "type": {
+        "heading": "Work Sans",
+        "body": "Work Sans",
+        "numeric": "Work Sans",
+        "weights": {
+          "heading": 800,
+          "numeric": 800
+        }
+      },
+      "shape": {
+        "radiusCard": 12,
+        "radiusControl": 10,
+        "pillControls": false,
+        "borderWidth": 2
+      },
+      "depth": {
+        "shadow": "hard-offset-4px",
+        "glass": false
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "top"
+      },
+      "recipes": {
+        "kpi": "outlined",
+        "kpiCard": "Flat bright fill per card, black outline, big number",
+        "charts": "Flat solid bars with black outlines"
+      },
+      "workMode": "Keep outlines, drop hard shadows on table rows"
+    },
+    {
+      "id": "editorial",
+      "name": "Editorial",
+      "group": "expressive",
+      "bestFor": ["blogs", "media", "events", "catalogs"],
+      "reference": "https://dribbble.com/shots/22290609-Online-Journal-Landing-Page-Concept",
+      "defaults": {
+        "palette": "crimson-ink",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "Anton",
+        "body": "Inter",
+        "numeric": "Anton",
+        "weights": {
+          "heading": 400,
+          "numeric": 400
+        }
+      },
+      "shape": {
+        "radiusCard": 0,
+        "radiusControl": 0,
+        "pillControls": false,
+        "borderWidth": 1
+      },
+      "depth": {
+        "shadow": "none",
+        "glass": false
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "ruled-top-bar"
+      },
+      "recipes": {
+        "kpi": "strip",
+        "kpiCard": "Large condensed numbers separated by vertical rules",
+        "charts": "Minimal; thin rules"
+      },
+      "imagery": "Needs real images; user uploads or placeholders until provided",
+      "workMode": "Inter for tables and forms; rules instead of cards",
+      "headingCase": "uppercase"
+    },
+    {
+      "id": "luxe-blush",
+      "name": "Luxe blush",
+      "group": "expressive",
+      "bestFor": ["beauty", "fashion", "boutique stores"],
+      "reference": "https://dribbble.com/shots/27487459--Daily-UI-053-Bloom-Skin-Skincare-Website-Navigation",
+      "defaults": {
+        "palette": "blush-wine",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "Cormorant Garamond",
+        "body": "Jost",
+        "numeric": "Cormorant Garamond",
+        "weights": {
+          "heading": 500,
+          "numeric": 500
+        }
+      },
+      "shape": {
+        "radiusCard": 20,
+        "radiusControl": 999,
+        "pillControls": true,
+        "borderWidth": 1
+      },
+      "depth": {
+        "shadow": "soft",
+        "glass": {
+          "opacity": 0.35,
+          "blurPx": 14,
+          "backdrop": "full-bleed-product-photo"
+        }
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "glass-top-bar"
+      },
+      "recipes": {
+        "kpi": "comparison",
+        "kpiCard": "Blush cards, serif numbers, thin wine borders (work mode)",
+        "charts": "Thin lines, soft fills"
+      },
+      "imagery": "Product or lifestyle photo from the user",
+      "workMode": "Blush solid cards, serif numbers, thin wine borders"
+    },
+    {
+      "id": "map-split",
+      "name": "Map split",
+      "group": "expressive",
+      "bestFor": ["rentals", "delivery", "travel", "field teams"],
+      "reference": "https://dribbble.com/shots/27793885-Bike-Rental-Sharing-Web-App-Design",
+      "defaults": {
+        "palette": "ember",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "Sora",
+        "body": "Sora",
+        "numeric": "Sora"
+      },
+      "shape": {
+        "radiusCard": 24,
+        "radiusControl": 999,
+        "pillControls": true,
+        "borderWidth": 0
+      },
+      "depth": {
+        "shadow": "soft",
+        "glass": false
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "split-map-detail"
+      },
+      "recipes": {
+        "kpi": "progress",
+        "kpiCard": "Dark cards with a route-style line and dots; small orange status badges",
+        "charts": "Route lines and simple bars"
+      },
+      "imagery": "Free OpenStreetMap-based tiles in a dark theme (check tile provider terms)",
+      "surfaces": {
+        "mapPanel": "graphite-dark",
+        "detailPanel": "light"
+      }
+    },
+    {
+      "id": "clay",
+      "name": "Clay",
+      "group": "expressive",
+      "bestFor": ["kids", "education", "onboarding"],
+      "reference": "2026 trends",
+      "defaults": {
+        "palette": "lavender",
+        "mode": "light",
+        "motionLevel": "expressive"
+      },
+      "type": {
+        "heading": "Nunito",
+        "body": "Nunito",
+        "numeric": "Nunito",
+        "weights": {
+          "heading": 800
+        }
+      },
+      "shape": {
+        "radiusCard": 28,
+        "radiusControl": 20,
+        "pillControls": true,
+        "borderWidth": 0
+      },
+      "depth": {
+        "shadow": "clay-double-inner",
+        "glass": false
+      },
+      "density": "roomy",
+      "layout": {
+        "nav": "top"
+      },
+      "recipes": {
+        "kpi": "standard",
+        "kpiCard": "Chunky rounded tiles with a 3D-style icon",
+        "charts": "Chunky rounded bars"
+      },
+      "alternatePalettes": ["teal-mint"],
+      "minTouchTargetPx": 48
+    },
+    {
+      "id": "natural",
+      "name": "Natural",
+      "group": "expressive",
+      "bestFor": ["wellness", "agriculture", "food"],
+      "reference": "2026 trends",
+      "defaults": {
+        "palette": "forest-sage",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "Fraunces",
+        "body": "DM Sans",
+        "numeric": "DM Sans",
+        "weights": {
+          "heading": 600
+        }
+      },
+      "shape": {
+        "radiusCard": 16,
+        "radiusControl": 12,
+        "pillControls": false,
+        "borderWidth": 1
+      },
+      "depth": {
+        "shadow": "faint",
+        "glass": false
+      },
+      "density": "comfortable",
+      "layout": {
+        "nav": "top"
+      },
+      "recipes": {
+        "kpi": "progress",
+        "kpiCard": "Muted green and clay tones, leaf-like progress shapes",
+        "charts": "Soft organic area charts"
+      },
+      "texture": "paper-faint",
+      "decor": "organic-blobs"
+    },
+    {
+      "id": "terminal",
+      "name": "Terminal",
+      "group": "expressive",
+      "bestFor": ["developer tools", "monitoring"],
+      "reference": "2026 trends",
+      "defaults": {
+        "palette": "plum-dark",
+        "mode": "dark",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "JetBrains Mono",
+        "body": "JetBrains Mono",
+        "numeric": "JetBrains Mono"
+      },
+      "shape": {
+        "radiusCard": 0,
+        "radiusControl": 0,
+        "pillControls": false,
+        "borderWidth": 1
+      },
+      "depth": {
+        "shadow": "none",
+        "glass": false
+      },
+      "density": "compact",
+      "layout": {
+        "nav": "split-panes"
+      },
+      "recipes": {
+        "kpi": "terminal",
+        "kpiCard": "Bracketed labels, status lights (green, amber, red dots), live numbers",
+        "charts": "Line and bar charts on grid lines"
+      },
+      "alternatePalettes": ["lime-night"],
+      "features": ["command-bar", "log-lists"]
+    },
+    {
+      "id": "swiss-type",
+      "name": "Swiss type",
+      "group": "expressive",
+      "bestFor": ["agencies", "architecture", "studios"],
+      "reference": "2026 trends",
+      "defaults": {
+        "palette": "crimson-ink",
+        "mode": "light",
+        "motionLevel": "subtle"
+      },
+      "type": {
+        "heading": "Inter Tight",
+        "body": "Inter",
+        "numeric": "Inter Tight",
+        "weights": {
+          "heading": 800,
+          "numeric": 800
+        }
+      },
+      "shape": {
+        "radiusCard": 0,
+        "radiusControl": 0,
+        "pillControls": false,
+        "borderWidth": 1
+      },
+      "depth": {
+        "shadow": "none",
+        "glass": false
+      },
+      "density": "roomy",
+      "layout": {
+        "nav": "top"
+      },
+      "recipes": {
+        "kpi": "strip",
+        "kpiCard": "Oversized number, tiny caption, lots of white space",
+        "charts": "Monochrome with one accent"
+      },
+      "grid": {
+        "columns": 12
+      },
+      "alignment": "strong-left-asymmetric"
+    }
+  ]
+}

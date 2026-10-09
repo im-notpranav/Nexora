@@ -1,0 +1,354 @@
+{
+  "$comment": "OFL fonts only, self-hosted via Fontsource. fontsourceId is the @fontsource/<id> package suffix; variable=true means @fontsource-variable/<id> also exists. Package names and OFL-1.1 license verified on the npm registry 2026-10-08.",
+  "version": 1,
+  "license": "OFL-1.1",
+  "fonts": [
+    {
+      "family": "Inter",
+      "role": "ui",
+      "fontsourceId": "inter",
+      "variable": true,
+      "fitsStyles": [3, 4, 8, 12, 18],
+      "verified": true
+    },
+    {
+      "family": "Inter Tight",
+      "role": "ui",
+      "fontsourceId": "inter-tight",
+      "variable": true,
+      "fitsStyles": [18],
+      "verified": true
+    },
+    {
+      "family": "Geist",
+      "role": "ui",
+      "fontsourceId": "geist",
+      "variable": true,
+      "fitsStyles": [1, 5, 7],
+      "verified": true
+    },
+    {
+      "family": "Google Sans Flex",
+      "role": "ui",
+      "fontsourceId": "google-sans-flex",
+      "variable": true,
+      "fitsStyles": [1, 4, 7],
+      "verified": true
+    },
+    {
+      "family": "Mona Sans",
+      "role": "ui",
+      "fontsourceId": "mona-sans",
+      "variable": true,
+      "fitsStyles": [7, 9],
+      "verified": true
+    },
+    {
+      "family": "Zalando Sans",
+      "role": "ui",
+      "fontsourceId": "zalando-sans",
+      "variable": true,
+      "fitsStyles": [5, 9],
+      "verified": true
+    },
+    {
+      "family": "Hanken Grotesk",
+      "role": "ui",
+      "fontsourceId": "hanken-grotesk",
+      "variable": true,
+      "fitsStyles": [6, 9],
+      "verified": true
+    },
+    {
+      "family": "Onest",
+      "role": "ui",
+      "fontsourceId": "onest",
+      "variable": true,
+      "fitsStyles": [8, 9],
+      "verified": true
+    },
+    {
+      "family": "IBM Plex Sans",
+      "role": "ui",
+      "fontsourceId": "ibm-plex-sans",
+      "variable": true,
+      "fitsStyles": [9],
+      "verified": true
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "role": "friendly-sans",
+      "fontsourceId": "plus-jakarta-sans",
+      "variable": true,
+      "fitsStyles": [7, 10],
+      "verified": true
+    },
+    {
+      "family": "Manrope",
+      "role": "friendly-sans",
+      "fontsourceId": "manrope",
+      "variable": true,
+      "fitsStyles": [1],
+      "verified": true
+    },
+    {
+      "family": "Outfit",
+      "role": "friendly-sans",
+      "fontsourceId": "outfit",
+      "variable": true,
+      "fitsStyles": [5],
+      "verified": true
+    },
+    {
+      "family": "DM Sans",
+      "role": "friendly-sans",
+      "fontsourceId": "dm-sans",
+      "variable": true,
+      "fitsStyles": [2, 16],
+      "verified": true
+    },
+    {
+      "family": "Instrument Sans",
+      "role": "friendly-sans",
+      "fontsourceId": "instrument-sans",
+      "variable": true,
+      "fitsStyles": [6],
+      "verified": true
+    },
+    {
+      "family": "Sora",
+      "role": "friendly-sans",
+      "fontsourceId": "sora",
+      "variable": true,
+      "fitsStyles": [14],
+      "verified": true
+    },
+    {
+      "family": "Jost",
+      "role": "friendly-sans",
+      "fontsourceId": "jost",
+      "variable": true,
+      "fitsStyles": [13],
+      "verified": true
+    },
+    {
+      "family": "Space Grotesk",
+      "role": "characterful-sans",
+      "fontsourceId": "space-grotesk",
+      "variable": true,
+      "fitsStyles": [3],
+      "verified": true
+    },
+    {
+      "family": "Bricolage Grotesque",
+      "role": "characterful-sans",
+      "fontsourceId": "bricolage-grotesque",
+      "variable": true,
+      "fitsStyles": [6, 11],
+      "verified": true
+    },
+    {
+      "family": "Funnel Display",
+      "role": "characterful-sans",
+      "fontsourceId": "funnel-display",
+      "variable": true,
+      "fitsStyles": [6, 13],
+      "verified": true
+    },
+    {
+      "family": "Funnel Sans",
+      "role": "characterful-sans",
+      "fontsourceId": "funnel-sans",
+      "variable": true,
+      "fitsStyles": [6, 13],
+      "verified": true
+    },
+    {
+      "family": "Work Sans",
+      "role": "characterful-sans",
+      "fontsourceId": "work-sans",
+      "variable": true,
+      "fitsStyles": [11],
+      "verified": true
+    },
+    {
+      "family": "Nunito",
+      "role": "characterful-sans",
+      "fontsourceId": "nunito",
+      "variable": true,
+      "fitsStyles": [15],
+      "verified": true
+    },
+    {
+      "family": "Fraunces",
+      "role": "serif",
+      "fontsourceId": "fraunces",
+      "variable": true,
+      "fitsStyles": [16],
+      "verified": true
+    },
+    {
+      "family": "Instrument Serif",
+      "role": "serif",
+      "fontsourceId": "instrument-serif",
+      "variable": false,
+      "fitsStyles": [12, 13],
+      "verified": true
+    },
+    {
+      "family": "Cormorant Garamond",
+      "role": "serif",
+      "fontsourceId": "cormorant-garamond",
+      "variable": true,
+      "fitsStyles": [13],
+      "verified": true
+    },
+    {
+      "family": "Source Serif 4",
+      "role": "serif",
+      "fontsourceId": "source-serif-4",
+      "variable": true,
+      "fitsStyles": [12, 16],
+      "verified": true
+    },
+    {
+      "family": "Crimson Pro",
+      "role": "serif",
+      "fontsourceId": "crimson-pro",
+      "variable": true,
+      "fitsStyles": [12, 16],
+      "verified": true
+    },
+    {
+      "family": "Anton",
+      "role": "display",
+      "fontsourceId": "anton",
+      "variable": false,
+      "fitsStyles": [12],
+      "verified": true
+    },
+    {
+      "family": "Bebas Neue",
+      "role": "display",
+      "fontsourceId": "bebas-neue",
+      "variable": false,
+      "fitsStyles": [12],
+      "verified": true
+    },
+    {
+      "family": "Big Shoulders",
+      "role": "display",
+      "fontsourceId": "big-shoulders",
+      "variable": true,
+      "fitsStyles": [3, 12],
+      "verified": true
+    },
+    {
+      "family": "Archivo Black",
+      "role": "display",
+      "fontsourceId": "archivo-black",
+      "variable": false,
+      "fitsStyles": [11],
+      "verified": true
+    },
+    {
+      "family": "Bagel Fat One",
+      "role": "display",
+      "fontsourceId": "bagel-fat-one",
+      "variable": false,
+      "fitsStyles": [15],
+      "verified": true
+    },
+    {
+      "family": "Geist Mono",
+      "role": "mono",
+      "fontsourceId": "geist-mono",
+      "variable": true,
+      "fitsStyles": [8, 17],
+      "verified": true
+    },
+    {
+      "family": "JetBrains Mono",
+      "role": "mono",
+      "fontsourceId": "jetbrains-mono",
+      "variable": true,
+      "fitsStyles": [8, 17],
+      "verified": true
+    },
+    {
+      "family": "Noto Sans Telugu",
+      "role": "indic",
+      "fontsourceId": "noto-sans-telugu",
+      "variable": true,
+      "fitsStyles": "all",
+      "verified": true
+    },
+    {
+      "family": "Noto Sans Devanagari",
+      "role": "indic",
+      "fontsourceId": "noto-sans-devanagari",
+      "variable": true,
+      "fitsStyles": "all",
+      "verified": true
+    },
+    {
+      "family": "Noto Sans Tamil",
+      "role": "indic",
+      "fontsourceId": "noto-sans-tamil",
+      "variable": true,
+      "fitsStyles": "all",
+      "verified": true
+    },
+    {
+      "family": "Anek Telugu",
+      "role": "indic",
+      "fontsourceId": "anek-telugu",
+      "variable": true,
+      "fitsStyles": "all",
+      "verified": true
+    },
+    {
+      "family": "Anek Devanagari",
+      "role": "indic",
+      "fontsourceId": "anek-devanagari",
+      "variable": true,
+      "fitsStyles": "all",
+      "verified": true
+    },
+    {
+      "family": "Mukta",
+      "role": "indic",
+      "fontsourceId": "mukta",
+      "variable": false,
+      "fitsStyles": "all",
+      "verified": true
+    },
+    {
+      "family": "Hind",
+      "role": "indic",
+      "fontsourceId": "hind",
+      "variable": false,
+      "fitsStyles": "all",
+      "verified": true
+    }
+  ],
+  "paidSwaps": [
+    {
+      "asked": ["Söhne", "Aeonik", "GT America"],
+      "offer": ["Inter", "Geist", "Hanken Grotesk"]
+    },
+    {
+      "asked": ["Editorial New", "Reckless", "Tiempos"],
+      "offer": ["Fraunces", "Instrument Serif"]
+    },
+    {
+      "asked": ["Druk", "PP Neue Machina"],
+      "offer": ["Anton", "Big Shoulders"]
+    },
+    {
+      "asked": ["General Sans", "Satoshi", "Switzer"],
+      "offer": ["Hanken Grotesk", "Plus Jakarta Sans", "Onest"],
+      "note": "Fontshare: commercial use allowed, redistribution not allowed"
+    }
+  ]
+}
